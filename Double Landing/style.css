@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1{
+    font-size: 100px;
+    color: aliceblue ;
+    backdrop-filter: brightness(.5);
+    letter-spacing:4px ;
+
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding-left: 20px,40px;
+    font-size: 25px;
+    border: 4px solid;
+    cursor: pointer;
+    transition: 1s backgroundcolor;
+    white-space: nowrap;
+
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.split{
+    width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+}
+.split.left{
+    position: absolute;
+    left: 0;
+    background-color: pink;
+    background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1631220221000 ");
+    background-size: cover;
+}
+.split.right{
+    position: absolute;
+    right: 0;
+    background-color: lightblue;
+    background-image: url("https://www.dealsplant.com/cdn/shop/products/samsung-mobile-phones-phantom-black-samsung-galaxy-s21-ultra-5g-12gb-256gb-storage-16348921593931.jpg?v=1634768112&width=1200");
+    background-size: cover;
+}
+.active-left .left{
+    width: 75%;
+
+}
+.active-left .right{
+    width: 25%;
+
+}
+.active-right .left{
+    width: 25%;
+
+}
+.active-right .right{
+    width: 75%;
+}
+.left, .right{
+  transition: width 2s ease-in-out;  
+}
+/*.box{
+    background-color: bisque;
+    width: 50%;
+    visibility: hidden;*/
+
+.popup{
+    padding: 20px;
+    top: 0;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.openpopup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+
+}
+.popup h1{
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+label{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.btn1{
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
